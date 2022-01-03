@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    background-image:url(./IMG/1000_F_285213349_44ARRP5jiqvPCtjinxbHJKyueCI0f74a.jpg);
+    display: flex;
+    margin: auto;
+    margin-top: 10%;
+    background-position: center;
+    background-size: cover;
+}
+.contain{
+    width: 40vw;
+    height:75vh ;
+    background-color: rgba(255, 255, 255, 0);
+    position:absolute;
+    z-index: 2;
+    right: 25%;
+}
+.back::after{
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.671); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 3;
+    z-index: 0;
+}
+h2{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: rgb(226, 226, 235);
+}
+form{
+    margin: auto;
+    text-align: center;
+}
+form input{
+
+    display: block;
+    margin: 25px;
+    height: 40px;
+    width: 70%;
+    background:none;
+    letter-spacing: 1px;
+    border-bottom: 1px rgb(248, 242, 242);
+    padding: 13px;
+    border: none;
+    cursor: pointer;
+    color: rgb(248, 242, 242);
+    box-shadow: 1px 2px 1px rgb(235, 229, 227);
+}
+.form :last-child{
+    margin-bottom:0 ;
+}
+button{
+    width: 50%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: none;
+    margin: 10px 100px 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+p{
+    text-align: center;
+    font-size: 16px;
+    color: rgb(226, 226, 235);
+}
+@media screen and (max-width:400px) {
+    
+    .contain{
+        width: 70vw;
+        height:50vh ;
+        background-color: rgba(255, 255, 255, 0.705);
+        position:absolute;
+        z-index: 2;
+        right: 15%;
+    }
+    
+    h2{
+        text-align: center;
+        margin-top: 10px;
+        font-size: 2em;
+        background-color: royalblue;
+        margin-bottom: 10px;
+        color: rgba(3, 2, 37);
+    }
+    form{
+        margin: auto;
+        text-align: center;
+    }
+    form input{
+    
+        display: block;
+        margin: 25px;
+        height: 40px;
+        width: 50%;
+        margin-left: 25%;
+        background-color: none;
+        letter-spacing: 1px;
+        padding: 13px;
+        border: none;
+        cursor: pointer;
+        color: rgb(0, 0, 0);
+        box-shadow: 1px 2px 3px rgba(3, 2, 37);
+    }
+    button{
+        width: 30%;
+        height: 40px;
+        background-color: rgba(5, 5, 5, 0.9);
+        border: none;
+        margin: 20px 200px 5px;
+        color: #fff;
+        cursor: pointer;
+    }
+  
+    p{
+        text-align: center;
+        font-size: 16px;
+    }
+}
